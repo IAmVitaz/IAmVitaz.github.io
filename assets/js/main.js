@@ -48,10 +48,16 @@ function scrollActive() {
 const showMoreButton = document.getElementById('show-more')
 
 showMoreButton.addEventListener('click', ()=> {
-    var elements = document.getElementsByClassName('experience__content');
-
-    elements.forEach(current => {
-        current.classList.remove('experience__content-hidden');
-    })
+    removeClass('.experience__content','experience__content-hidden')
+    showMoreButton.classList.toggle('experience__content-hidden')
 })
+
+function removeClass(selector, klass) {
+    var elems = document.querySelectorAll(selector);
+
+    for (var i = elems.length; i--;) {
+        var reg = new RegExp("(?:^|\\s)"+ klass +"(?!\\S)", "gi");
+        elems[i].className = elems[i].className.replace(reg, "");
+    }
+}
  

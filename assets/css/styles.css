@@ -372,36 +372,36 @@ nav__toggle{
   background-color: var(--first-color);
 }
 
-.skills__html{
-  width: 80%;
-}
-
-.skills__js{
+.skills__one{
   width: 90%;
 }
 
-.skills__react{
-  width: 70%;
-}
-
-.skills__angular{
-  width: 60%;
-}
-
-.skills__php{
-  width: 80%;
-}
-
-.skills__node{
+.skills__two{
   width: 90%;
 }
 
-.skills__firebase{
+.skills__three{
   width: 70%;
 }
 
-.skills__python{
+.skills__four{
+  width: 50%;
+}
+
+.skills__five{
+  width: 80%;
+}
+
+.skills__six{
+  width: 70%;
+}
+
+.skills__seven{
   width: 60%;
+}
+
+.skills__eight{
+  width: 90%;
 }
 
 /* ===== EXPERIENCE =====*/
