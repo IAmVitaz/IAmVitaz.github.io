@@ -43,4 +43,15 @@ function scrollActive() {
         }
     })
 }
+
+/*===== EXPAND WORK EXPERIENCE =====*/
+const showMoreButton = document.getElementById('show-more')
+
+showMoreButton.addEventListener('click', ()=> {
+    var elements = document.getElementsByClassName('experience__content');
+
+    elements.forEach(current => {
+        current.classList.remove('experience__content-hidden');
+    })
+})
  
