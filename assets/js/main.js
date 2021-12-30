@@ -54,10 +54,6 @@ showMoreButton.addEventListener('click', ()=> {
 
 function removeClass(selector, klass) {
     var elems = document.querySelectorAll(selector);
-
-    for (var i = elems.length; i--;) {
-        var reg = new RegExp("(?:^|\\s)"+ klass +"(?!\\S)", "gi");
-        elems[i].className = elems[i].className.replace(reg, "");
-    }
+    elems.forEach(elem => elem.classList.remove(klass))
 }
  
