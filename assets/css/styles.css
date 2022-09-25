@@ -682,16 +682,9 @@ nav__toggle{
   font-weight: var(--font-medium);
 }
 
-.contact__button{
-  outline: none;
-  border: none;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-}
-
 .contact__info{
   margin-bottom: var(--mb-3);
+  min-width: 200px;
 }
 
 .contact__subtitle{
@@ -760,9 +753,12 @@ nav__toggle{
   .skills__container,
   .services__container,
   .works__container,
-  .contact__container,
   .contact__inputs{
     grid-template-columns: repeat(2,1fr);
+  }
+
+  .contact__container{
+    grid-template-columns: repeat(3,1fr);
   }
 
   .about__description{
