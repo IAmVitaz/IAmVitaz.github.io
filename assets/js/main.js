@@ -36,10 +36,18 @@ function scrollActive() {
         const sectionTop = current.offsetTop - 50
         sectionId = current.getAttribute('id')
 
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.add('active')
+        if (((window.innerHeight + window.scrollY) >= document.body.offsetHeight)) { //Page scrolled down till the very bottom
+            if (sectionId == "contact") {
+                document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.add('active')
+            } else {
+                document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.remove('active')
+            }
         } else {
-            document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.remove('active')
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.add('active')
+            } else {
+                document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.remove('active')
+            }
         }
     })
 }
