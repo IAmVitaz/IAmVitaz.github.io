@@ -367,37 +367,54 @@ nav__toggle{
   background-color: var(--first-color);
 }
 
-.skills__one{
+.skills__one-one{
   width: 90%;
 }
 
-.skills__two{
+.skills__one-two{
   width: 90%;
 }
 
-.skills__three{
-  width: 70%;
-}
-
-.skills__four{
-  width: 50%;
-}
-
-.skills__five{
+.skills__one-three{
   width: 80%;
 }
 
-.skills__six{
+.skills__one-four{
+  width: 90%;
+}
+
+.skills__two-one{
+  width: 80%;
+}
+
+.skills__two-two{
+  width: 60%;
+}
+
+.skills__two-three{
+  width: 80%;
+}
+
+.skills__two-four{
+  width: 90%;
+}
+
+.skills__three-one{
+  width: 80%;
+}
+
+.skills__three-two{
   width: 70%;
 }
 
-.skills__seven{
+.skills__three-three{
   width: 60%;
 }
 
-.skills__eight{
+.skills__three-four{
   width: 60%;
 }
+
 
 /* ===== EXPERIENCE =====*/
 .experience__container{
@@ -750,14 +767,13 @@ nav__toggle{
   }
 
   .about__container,
-  .skills__container,
   .services__container,
   .works__container,
   .contact__inputs{
     grid-template-columns: repeat(2,1fr);
   }
 
-  .contact__container{
+  .contact__container, .skills__container {
     grid-template-columns: repeat(3,1fr);
   }
 
