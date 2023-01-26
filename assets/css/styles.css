@@ -666,7 +666,7 @@ nav__toggle{
 }
 
 .works__description{
-  font-size: var(--h3-font-size);
+  font-size: var(--h4-font-size);
   color: var(--first-color-lighten);
   margin-left: 10px;
   margin-right: 10px;
@@ -679,7 +679,7 @@ nav__toggle{
 }
 
 .works__item__links__container{
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .works_item_link{
